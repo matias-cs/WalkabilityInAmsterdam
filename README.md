@@ -19,7 +19,7 @@ The StreetInfo file contains the results of the addition of different datasets t
 - Method C: Zonal Statistics - The pixels that overlap with the 15m buffer of the walkable network layer are summarized. The values overlapping every buffer are averaged to obtain the score.
 - Method D: Join by location - Attributes for every street segment are taken from the areas with the biggest overlap with the target dataset.
 
-## Datasets:
+### Datasets:
 #### Pedestrian Network
 The pedestrian network of the municipality of Amsterdam is downloaded from OpenStreetMap using the OSMnx plugin (Boeing, 2017) in Python. Since there are street segments that vary greatly in length, the lines are segmented every 50 meters and the parts measuring less than 1 meter are disregarded. The pedestrian network is therefore analysed in segments of 50 meters or less.
 #### Traffic safety
