@@ -12,8 +12,8 @@ Files to reproduce the results of the paper: Developing a city-specific walkabil
 - StreetInfo.csv: CSV file containing one row per street segment. Each column displays information about the street segment that has been added in QGIS using buffer, zonal statistics, catchment areas or location-based joins.
 - OSM Walkable Streets: OSM walkable street network divided into segments of 50m or less and without the segments that have a length of less than 1m.
 
-## Description of the process to create the StreetInfo file:
-The StreetInfo file contains the results of the addition of different datasets to the street network using one of the following 4 methods:
+## Description of the process to create the StreetInfo, Obstacles and OpenAmenities files:
+The files contain the results of the addition of different datasets to the street network using one of the following 4 methods:
 - Method A: Buffer - Creates a 15m buffer around the street centerline and counts the number of objects of interest that fall into the buffer.
 - Method B: Count elements in catchment areas - Using the walkable network layer a 350m catchment area is calculated around the points of interest. The number of catchment areas that overlap with the street centroid is counted.
 - Method C: Zonal Statistics - The pixels that overlap with the 15m buffer of the walkable network layer are summarized. The values overlapping every buffer are averaged to obtain the score.
